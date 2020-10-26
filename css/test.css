@@ -1,0 +1,58 @@
+.main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main .frame {
+  position: relative;
+}
+
+.main .frame .album {
+  height: 500px;
+  width: auto;
+}
+
+.main .frame .album img {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+}
+
+.main .frame .album .cover {
+  width: auto;
+  height: 500px;
+  z-index: 1;
+}
+
+.main .frame .album .lecord {
+  width: auto;
+  height: 500px;
+}
+
+.main .frame .album .lecord.active {
+  -webkit-animation: 3s linear 1s infinite both running rota;
+          animation: 3s linear 1s infinite both running rota;
+}
+
+@-webkit-keyframes rota {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rota {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=test.css.map */

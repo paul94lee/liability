@@ -1,0 +1,36 @@
+.main {
+    width: 80%;
+    margin: 0 auto;
+    .frame {
+        position: relative;
+        .album {
+            height: 500px;
+            width: auto;
+            img {
+                position: absolute;
+                top: 50%;
+                left: 30%;
+            }
+            .cover {
+                width: auto;
+                height: 500px;
+                z-index: 1;
+            }
+            .lecord {
+                width: auto;
+                height: 500px;
+            }
+            .lecord.active {
+                animation: 3s linear 1s infinite both running rota;
+                @keyframes rota {
+                    from {
+                        transform: rotate(0deg);
+                    }
+                    to {
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+        }
+    }
+}
