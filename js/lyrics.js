@@ -215,4 +215,5 @@ window.addEventListener('DOMContentLoaded', function () {
     function mouseout() {
         cursor.classList.remove('active');
     };
+    
 });

@@ -51,12 +51,12 @@ body .front .title {
 }
 
 body .front .title figure img {
-  width: 150%;
+  width: 100%;
   height: auto;
 }
 
 body .front .title figcaption {
-  margin-left: 100px;
+  margin-left: 30px;
   font-size: 4em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -426,32 +426,74 @@ body .wrapper .wrapper-inner .contents .pages .lyric-page .lyric-section .galler
   height: 100vh;
 }
 
-body .wrapper .wrapper-inner .contents .pages .lyric-page .lyric-section .gallery-body div {
+body .wrapper .wrapper-inner .contents .pages .lyric-page .lyric-section .gallery-body > div {
   position: relative;
   width: 60%;
-  height: 100vh;
+  height: 90vh;
+  margin: 0 auto;
+  margin-top: 10vh;
+  overflow: hidden;
+}
+
+body .wrapper .wrapper-inner .contents .pages .lyric-page .lyric-section .gallery-body > div .porfile-warp .profile-move {
+  position: absolute;
+  top: 0;
+  width: 100%;
   margin: 0 auto;
 }
 
-body .wrapper .wrapper-inner .contents .pages .lyric-page .lyric-section .gallery-body div img {
-  position: absolute;
-  width: 50%;
+body .wrapper .wrapper-inner .contents .pages .lyric-page .lyric-section .gallery-body > div .porfile-warp .profile-move * {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+body .wrapper .wrapper-inner .contents .pages .lyric-page .lyric-section .gallery-body > div .porfile-warp .profile-move figure {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 0px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+body .wrapper .wrapper-inner .contents .pages .lyric-page .lyric-section .gallery-body > div .porfile-warp .profile-move figure img {
+  margin: 0;
+  width: 100%;
   height: auto;
 }
 
-body .wrapper .wrapper-inner .contents .pages .lyric-page .lyric-section .gallery-body div img:nth-of-type(1) {
-  right: 0;
-  top: 5%;
+body .wrapper .wrapper-inner .contents .pages .lyric-page .lyric-section .gallery-body > div .porfile-warp .profile-move h3 {
+  font-size: 3em;
+  color: #000;
 }
 
-body .wrapper .wrapper-inner .contents .pages .lyric-page .lyric-section .gallery-body div img:nth-of-type(2) {
+body .wrapper .wrapper-inner .contents .pages .lyric-page .lyric-section .gallery-body > div .porfile-warp .profile-move h4 {
+  font-size: 2em;
+  color: #000;
+}
+
+body .wrapper .wrapper-inner .contents .pages .lyric-page .lyric-section .gallery-body > div .porfile-warp .profile-move p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: #777;
+}
+
+body .wrapper .wrapper-inner .contents .pages .lyric-page .lyric-section .gallery-body > div .porfile-warp .album figure {
+  margin-top: 50px;
+  margin-bottom: 45px;
+}
+
+body .wrapper .wrapper-inner .contents .pages .lyric-page .lyric-section .gallery-body > div .porfile-warp .profile-move:nth-of-type(1) {
   left: 0;
-  top: 30%;
 }
 
-body .wrapper .wrapper-inner .contents .pages .lyric-page .lyric-section .gallery-body div img:nth-of-type(3) {
-  right: 0;
-  bottom: 0;
+body .wrapper .wrapper-inner .contents .pages .lyric-page .lyric-section .gallery-body > div .porfile-warp .profile-move:nth-of-type(2) {
+  left: 100%;
+}
+
+body .wrapper .wrapper-inner .contents .pages .lyric-page .lyric-section .gallery-body > div .porfile-warp .profile-move:nth-of-type(3) {
+  left: 200%;
 }
 
 body .wrapper .wrapper-inner .contents .pages .lyric-page .lyric-section .gallery-body.active,
