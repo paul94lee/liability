@@ -34,7 +34,6 @@ window.addEventListener('DOMContentLoaded', function () {
     var timeUnit = 0, minute = 0, realtime = 0;
     var tit = 'liability';
     var titCap = document.querySelector('.title figcaption span');
-
     setTimeout(() => {
         for (var i = 0; i < tit.length; i++) {
             (function (x) {
@@ -61,7 +60,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
             album.style = "opacity:1;"
         }, 1000);
-    }, 4000);
+    }, 0);
     album.addEventListener('transitionend', function () {
         logo.style = "top:35px; opacity:1;"
     });

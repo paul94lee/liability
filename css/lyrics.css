@@ -440,6 +440,7 @@ body .wrapper .wrapper-inner .contents .pages .lyric-page .lyric-section .galler
   top: 0;
   width: 100%;
   margin: 0 auto;
+  height: 60%;
 }
 
 body .wrapper .wrapper-inner .contents .pages .lyric-page .lyric-section .gallery-body > div .porfile-warp .profile-move * {
@@ -449,7 +450,7 @@ body .wrapper .wrapper-inner .contents .pages .lyric-page .lyric-section .galler
 }
 
 body .wrapper .wrapper-inner .contents .pages .lyric-page .lyric-section .gallery-body > div .porfile-warp .profile-move figure {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   margin-bottom: 0px;
   border-radius: 20px;
@@ -458,13 +459,16 @@ body .wrapper .wrapper-inner .contents .pages .lyric-page .lyric-section .galler
 
 body .wrapper .wrapper-inner .contents .pages .lyric-page .lyric-section .gallery-body > div .porfile-warp .profile-move figure img {
   margin: 0;
-  width: 100%;
+  width: 70%;
+  margin: 0 15%;
+  padding: 0 auto;
   height: auto;
 }
 
 body .wrapper .wrapper-inner .contents .pages .lyric-page .lyric-section .gallery-body > div .porfile-warp .profile-move h3 {
   font-size: 3em;
   color: #000;
+  text-align: center;
 }
 
 body .wrapper .wrapper-inner .contents .pages .lyric-page .lyric-section .gallery-body > div .porfile-warp .profile-move h4 {
@@ -482,18 +486,6 @@ body .wrapper .wrapper-inner .contents .pages .lyric-page .lyric-section .galler
 body .wrapper .wrapper-inner .contents .pages .lyric-page .lyric-section .gallery-body > div .porfile-warp .album figure {
   margin-top: 50px;
   margin-bottom: 45px;
-}
-
-body .wrapper .wrapper-inner .contents .pages .lyric-page .lyric-section .gallery-body > div .porfile-warp .profile-move:nth-of-type(1) {
-  left: 0;
-}
-
-body .wrapper .wrapper-inner .contents .pages .lyric-page .lyric-section .gallery-body > div .porfile-warp .profile-move:nth-of-type(2) {
-  left: 100%;
-}
-
-body .wrapper .wrapper-inner .contents .pages .lyric-page .lyric-section .gallery-body > div .porfile-warp .profile-move:nth-of-type(3) {
-  left: 200%;
 }
 
 body .wrapper .wrapper-inner .contents .pages .lyric-page .lyric-section .gallery-body.active,
@@ -539,13 +531,20 @@ body .wrapper .wrapper-inner .contents .visual .music-image .frame {
 
 body .wrapper .wrapper-inner .contents .visual .music-image .frame .album {
   height: 100%;
-  width: auto;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 body .wrapper .wrapper-inner .contents .visual .music-image .frame .album img {
   position: absolute;
-  top: 0%;
+  top: 50% !important;
   right: 0%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 body .wrapper .wrapper-inner .contents .visual .music-image .frame .album .album-cover {
@@ -575,23 +574,23 @@ body .wrapper .wrapper-inner .contents .visual .music-image .frame .album .lecor
 
 @-webkit-keyframes rota {
   from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: translateY(-50%) rotate(0deg);
+            transform: translateY(-50%) rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: translateY(-50%) rotate(360deg);
+            transform: translateY(-50%) rotate(360deg);
   }
 }
 
 @keyframes rota {
   from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: translateY(-50%) rotate(0deg);
+            transform: translateY(-50%) rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: translateY(-50%) rotate(360deg);
+            transform: translateY(-50%) rotate(360deg);
   }
 }
 
@@ -639,5 +638,50 @@ body .wrapper .wrapper-inner .contents .visual .vdoLink {
   transition: 0.5s;
   right: 35px;
   bottom: -35px;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  body .wrapper .wrapper-inner .contents {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  body .wrapper .wrapper-inner .contents > div {
+    -ms-flex-preferred-size: 100% !important;
+        flex-basis: 100% !important;
+  }
+  body .wrapper .wrapper-inner .contents .pages {
+    position: fixed;
+    top: 40%;
+    height: 60% !important;
+  }
+  body .wrapper .wrapper-inner .contents .pages .lyric-page {
+    height: 100%;
+    overflow: hidden;
+  }
+  body .wrapper .wrapper-inner .contents .pages .lyric-content {
+    height: 60% !important;
+  }
+  body .wrapper .wrapper-inner .contents .pages .gallery-body {
+    height: 100% !important;
+    overflow: hidden;
+  }
+  body .wrapper .wrapper-inner .contents .pages .gallery-body > div {
+    height: 90% !important;
+  }
+  body .wrapper .wrapper-inner .contents .pages .gallery-body > div .porfile-warp .profile-move p {
+    display: none !important;
+  }
+  body .wrapper .wrapper-inner .contents .visual {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 40vh !important;
+  }
+  body .scrollAni {
+    bottom: 10% !important;
+  }
 }
 /*# sourceMappingURL=lyrics.css.map */
